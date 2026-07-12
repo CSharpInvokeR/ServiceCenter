@@ -1,0 +1,13 @@
+﻿<Application x:Class="ServiceCenter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:ServiceCenter.Converters"
+             StartupUri="Views/LoginWindow.xaml">
+    <Application.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+
+        <Style TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"/>
+        </Style>
+    </Application.Resources>
+</Application>
